@@ -23,11 +23,15 @@ print(digits_counter("1 2 -5 3 12"))"""
 
 
 def centre(array: str) -> str:
+
+    ln = len(array)
+
     if len(array) % 2 == 0:
         array = array[int(len(array)/2 - 1 ): int(len(array)/2 + 1)]
     else:
         array = array[len(array) // 2]
     return array
 print(centre("testt"))
+
 
 
